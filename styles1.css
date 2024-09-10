@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0a6bb4, #8bd2f2, #15b7ec);
+    background-size: 300% 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo-left, .logo-right {
+    width: 125px;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    flex-grow: 1;
+    margin-top: 5px;
+    font-size: xx-large;
+}
+
+.registration-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 40px; /* Reduced from 80px to 40px */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+label {
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #15b7ec;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #1391b3;
+}
+
+/* Adding new section for image beside Course field */
+.image-group {
+    width: 50%;
+    display: flex;
+    justify-content: center; /* Align image to the right of the container */
+    align-items: center;
+}
+
+.link-image {
+    width: 200px; /* You can adjust the size of the image */
+    height: 100;
+    cursor: pointer; /* Show pointer on hover to indicate it's clickable */
+    margin-left:; /* Add space between the image and course field */
+    margin-top: 20px;
+}
+
+.link-image:hover {
+    opacity: 0.8; /* Slight hover effect to indicate interactivity */
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 10px;
+        align-items: center;
+    }
+
+    .logo-left, .logo-right {
+        width: 60px;
+    }
+
+    .input-row {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .input-group {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        margin: 10px 0;
+        margin-top: 60px;
+        font-size: 20px;
+    }
+
+    .registration-container {
+        padding: 10px;
+        margin-top: 20px; /* Reduced further for smaller screens */
+        width: 90%;
+    }
+    .image-group {
+        width: 100%;
+        margin-top: 5px;
+        justify-content: center; /* Align image to the left on smaller screens */
+    }
+
+    .link-image {
+        width: 125px; /* Smaller image for mobile screens */
+    }
+}
+
+/* Animation for background gradient */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
